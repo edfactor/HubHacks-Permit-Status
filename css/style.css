@@ -1,0 +1,127 @@
+.theme-showcase {
+	margin: 20px auto;
+}
+
+.theme-showcase .jumbotron:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media (max-width: 599px){
+	.theme-showcase .jumbotron img {
+		margin: 20px 0;
+  }
+	
+	.theme-showcase .jumbotron p {
+		font-size: 1.2em;	
+	}
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+	.theme-showcase .jumbotron img {
+		float: left;
+		width: 45%;
+		height: auto;
+  }
+
+	.theme-showcase .jumbotron p {
+	  margin-left: 50%;
+		font-size: 1.2em;	
+	}
+}
+
+@media (min-width: 1000px) {
+	.theme-showcase .jumbotron img {
+		float: left;
+		width: 25%;
+		height: auto;
+	}
+
+	.theme-showcase .jumbotron p {
+	  margin-left: 30%;	
+	}
+}
+
+/* =============================================================================
+   COLLAPSIBLE/EXPANDABLE HEADERS
+============================================================================= */
+
+.xpandable,
+.review {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 5px;
+  padding: 0.7em 1em 0.7em 1em;
+  background-color: #eee;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.xpandable:hover,
+.review:hover {
+  cursor: pointer;
+}
+
+.xpandable.open,
+.review.open {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.xpandable-area,
+.review-area {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 2em;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.xpandable .glyphicon,
+.review .glyphicon {
+	margin-right: 10px;
+}
+
+.permit-trouble {
+	background-color: #f2dede;
+	color: #a94442;
+}
+
+.permit-process {
+	background-color: #fcf8e3;
+	color: #8a6d3b;	
+}
+
+.permit-complete {
+	background-color: #dff0d8;
+	color: #3c763d;	
+}
+
+.glyphicon-info-sign {
+	top: -0.4em;
+}
+
+.glyphicon-info-sign:before {
+  content: "";
+}
+
+.glyphicon-info-sign:after {
+	font-size: 12px;
+  content: "\e086";
+	color: #428bca;
+	margin-left: 3px;
+}
+
